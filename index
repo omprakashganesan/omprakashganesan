@@ -1,0 +1,7 @@
+personal-website/
+│
+├── index.html        # Home page
+├── achievements.html # Achievements page
+├── blog.html         # Blog page
+└── css/
+    └── style.css     # CSS file for styling
