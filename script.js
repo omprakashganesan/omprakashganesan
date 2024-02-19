@@ -32,6 +32,17 @@ function displayBlogPosts() {
         blogSection.appendChild(postElement);
     });
 }
+document.addEventListener('DOMContentLoaded', (event) => {
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent actual form submission
+            alert("Thank you for your message. This is a simulation, so no email was actually sent.");
+            // Clear the form fields
+            contactForm.reset();
+        });
+    }
+});
 
 // Call displayBlogPosts on window load
 window.onload = function() {
